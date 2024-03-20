@@ -25,7 +25,7 @@ with open('corpus.json', 'w') as json_file:
     try:
         for result in results:
             try:
-                if i % 250 == 0:
+                if (i % 250 == 249):
                     sleep_dur = 350 #seconds
                     finish = datetime.now() + timedelta(seconds=sleep_dur)
                     print(f"Honk shoo mimimi. Come back at {finish}. ")
