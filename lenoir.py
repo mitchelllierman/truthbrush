@@ -45,3 +45,10 @@ with open('corpus.json', 'w') as json_file:
         # Write a closing bracket for the JSON array
     finally:
         json_file.write(']')
+
+
+# Currently each search result caps at 250 posts
+# This behavior persists after a 5 min nap.
+# Need to implement min id and a loop around search
+# To be able to find more posts than 250 in a run. 
+# Good start!
